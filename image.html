@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+img{
+width: 230px;
+height: 200px;
+object-fit: cover;
+margin-left: 10px;
+filter: grayscale(90%);
+border-radius: 12px;
+transition: all,0.3s,linear;
+}
+img:hover{
+    transform: translateZ(-70px);
+    cursor: pointer;
+  filter: grayscale(0%);
+}
+.wholegallery div{
+display: flex;
+ }
+ .wholegallery{
+position: relative;
+top: 300px;
+display: flex;
+overflow-x: scroll;
+max-width: 830px;
+ }
+ body{
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+ body ::-webkit-scrollbar{
+display: none;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="wholegallery">
+        <div class="gallery">
+           <img src="./images/DSCF0580.JPG" alt="">
+           <img src="./images/DSCF0609.JPG" alt="">
+           <img src="./images/DSCF0611.JPG" alt="">
+           <img src="./images/DSCF0671.JPG" alt="">
+        </div>
+        <div class="gallery-2">
+            <img src="./images/DSCF0762.JPG" alt="">
+            <img src="./images/DSCF0762.JPG" alt="">
+            <img src="./images/DSCF0782.JPG" alt="">
+            <img src="./images/medium-shot-anime-style-man-portrait.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
